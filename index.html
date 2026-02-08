@@ -8,35 +8,46 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0f172a;
+      background: #0f172a url("background.jpg") no-repeat center/cover;
       color: white;
+    }
+    .overlay {
+      background: rgba(15, 23, 42, 0.75);
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
       text-align: center;
+      padding: 40px;
     }
     .container {
       max-width: 800px;
-      padding: 40px;
+    }
+    img.logo {
+      height: 50px;
+      margin-bottom: 30px;
     }
     h1 {
-      font-size: 48px;
+      font-size: 40px;
       margin-bottom: 20px;
     }
     p {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.6;
       opacity: 0.9;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Qilin Bio</h1>
-    <p>
-      We drive scientific innovation to improve patients’ quality of life.
-    </p>
+  <div class="overlay">
+    <div class="container">
+      <img src="logo.png" alt="Qilin Bio Logo" class="logo">
+      <h1>We drive scientific innovation to improve patients’ quality of life.</h1>
+      <p>
+        Qilin Bio is a biotechnology startup focused on translating scientific insight into meaningful clinical impact.
+      </p>
+    </div>
   </div>
 </body>
 </html>
+
